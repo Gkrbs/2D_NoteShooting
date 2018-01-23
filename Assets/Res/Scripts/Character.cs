@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Character : MonoBehaviour {
+    [SerializeField] GameObject bulletPrefab;
     private float speed;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
         speed = 5.0f;	
 	}
 	
@@ -39,6 +40,11 @@ public class Character : MonoBehaviour {
                 transform.position += Vector3.right * speed * Time.deltaTime;
             else
                 transform.position = new Vector3(3.0f, transform.position.y, 0.0f);
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GameObject clone = Instantiate(bulletPrefab);
+            clone.transform.position = transform.position + new Vector3(0.0f, 0.8f, 0.0f);
         }
     }
 }

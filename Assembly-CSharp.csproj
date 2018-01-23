@@ -46,8 +46,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Res\Scripts\Alert_Line.cs" />
      <Compile Include="Assets\Res\Scripts\Background.cs" />
      <Compile Include="Assets\Res\Scripts\Character.cs" />
+     <Compile Include="Assets\Res\Scripts\Character_Bullet.cs" />
+     <Compile Include="Assets\Res\Scripts\Destroy_Zone.cs" />
+     <Compile Include="Assets\Res\Scripts\Meteorite.cs" />
+     <Compile Include="Assets\Res\Scripts\MeteoriteManager.cs" />
+     <Compile Include="Assets\Res\Scripts\Monster.cs" />
+     <Compile Include="Assets\Res\Scripts\MonsterManager.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
